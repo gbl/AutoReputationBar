@@ -8,6 +8,11 @@ function AutoReputationBar:OnEnable()
 	self:RegisterEvent("CHAT_MSG_COMBAT_FACTION_CHANGE")
 end
 
+SLASH_REP1 = "/rep"
+SlashCmdList["REP"] = function(command)
+	AutoReputationBar:Debug()
+end
+
 function AutoReputationBar:CHAT_MSG_COMBAT_FACTION_CHANGE(text, player, lang, channel, player2, special, zonechanid, chindex, chbasename) 
 
 	local startpos, endpos, faction, change = string.find(text, "Your (.*) reputation has increased by ([0-9]*)");
