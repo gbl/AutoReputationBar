@@ -8,4 +8,5 @@ the current session. Do /rep after a MC run and you'll get a message similar
 to 
 
 > Watching Hydraxian Waterlords
+
 > Gained 980 rep with Hydraxian Waterlords this session
